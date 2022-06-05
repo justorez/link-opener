@@ -2,7 +2,7 @@
     "name": "Link Opener",
     "version": "0.0.1",
     "manifest_version": 3,
-    "description": "超链接都变成新标签页打开！🪄",
+    "description": "🪄 超链接都变成新标签页打开！",
     "homepage_url": "https://github.com/justorez/link-opener",
     "icons": {
         "16": "icons/16.png",

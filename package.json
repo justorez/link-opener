@@ -2,7 +2,7 @@
   "name": "link-opener",
   "private": true,
   "version": "0.0.1",
-  "description": "超链接都变成新标签页打开！🪄",
+  "description": "🪄 超链接都变成新标签页打开！",
   "author": "justorez",
   "license": "MIT",
   "scripts": {
