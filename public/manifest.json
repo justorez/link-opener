@@ -1,0 +1,42 @@
+{
+    "name": "Link Opener",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "description": "超链接都变成新标签页打开！🪄",
+    "homepage_url": "https://github.com/justorez/link-opener",
+    "icons": {
+        "16": "icons/16.png",
+        "48": "icons/48.png",
+        "128": "icons/128.png"
+    },
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Link Opener"
+    },
+    "permissions": [
+        "tabs",
+        "contextMenus",
+        "storage"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "background": {
+        "service_worker": "assets/background.js",
+        "type": "module"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [ "assets/content.js" ],
+            "run_at": "document_idle"
+        }
+    ],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+}
